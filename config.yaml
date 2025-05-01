@@ -1,0 +1,23 @@
+Backend: Vivado
+ClockPeriod: 5
+IOType: io_parallel
+HLSConfig:
+  Model:
+    Precision: ap_fixed<8,3>
+    ReuseFactor: 1
+    Strategy: Resource
+    Trace: False
+  LayerName:
+    conv2d:
+      Precision:
+        weight: ap_fixed<8,3>
+        bias: ap_fixed<8,3>
+        result: ap_fixed<8,3>
+    dense:
+      Precision:
+        weight: ap_fixed<8,3>
+        bias: ap_fixed<8,3>
+        result: ap_fixed<8,3>
+InputData: dummy_input.npy
+OutputDir: my-hls4ml-project
+ProjectName: my_project
