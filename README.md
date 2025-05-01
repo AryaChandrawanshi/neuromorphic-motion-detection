@@ -28,7 +28,7 @@ We simulate event-based (DVS-like) frames from a **standard webcam**, and perfor
 
 ---
 
-## 🧪 Dataset
+## Dataset
 
 - **DVSGesture** from `tonic.datasets`
 - Event format: `(x, y, polarity, timestamp)`
@@ -37,7 +37,7 @@ We simulate event-based (DVS-like) frames from a **standard webcam**, and perfor
 
 ---
 
-## 🛠️ Tools & Libraries Used
+## Tools & Libraries Used
 
 - `snnTorch` – Spiking neural network modeling
 - `Brevitas` – Quantization-aware training
@@ -48,13 +48,13 @@ We simulate event-based (DVS-like) frames from a **standard webcam**, and perfor
 
 ---
 
-## 🎥 Real-Time Gesture Detection
+## Real-Time Gesture Detection
 
 Standard webcam input is preprocessed into ON/OFF 2-channel event-like tensors by computing signed brightness differences. These are fed into the trained model to perform gesture classification in real time.
 
 ---
 
-## ⚙️ Future Work
+## Future Work
 
 - Resolve `hls4ml` library issues for successful hardware conversion
 - Add support for asynchronous event camera devices (e.g., DVS128 hardware)
